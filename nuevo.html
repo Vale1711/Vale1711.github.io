@@ -47,6 +47,14 @@
                const apellido = document.getElementbyId ("apellido").value;
                const edad = document.getElementbyId ("edad").value;
                console.log(nombre,apellido,edad);
+               push(
+                ref(database, 'septimo'),
+                {
+                    name: nombre,
+                    last: apellido,
+                    edad: edad
+                }
+               )
          }
 
 
